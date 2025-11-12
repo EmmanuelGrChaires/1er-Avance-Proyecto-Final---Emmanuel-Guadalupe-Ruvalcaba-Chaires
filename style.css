@@ -1,0 +1,135 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: url('https://i.pinimg.com/1200x/2e/71/69/2e7169e10859dbe24b77802023bd7c6c.jpg') 
+              no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 35px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  color: #d16ba5;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #650072;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(209, 107, 165, 0.6);
+  background-color: #fff;
+}
+
+
+button, .btn {
+  background: linear-gradient(90deg, #d16ba5, #f9a8d4, #fcbad3);
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button:hover, .btn:hover {
+  background-position: right center;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(209, 107, 165, 0.5);
+}
+
+
+.link {
+  text-align: center;
+  margin-top: 18px;
+  color: #f35ab3;
+  font-weight: 500;
+}
+
+.link a {
+  color: #b96e90;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  text-decoration: underline;
+  color: #eb6ad9;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-card {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
