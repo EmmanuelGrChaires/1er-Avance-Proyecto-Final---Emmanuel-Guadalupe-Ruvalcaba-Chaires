@@ -4,18 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Backoffice</title>
-  <link rel="stylesheet" href="style.css">
- 
-  <meta http-equiv="refresh" content="2; url=login.html">
+
+  <link rel="stylesheet" href="home.css">
+
+  <script src="protecttoken.js" defer></script>
+
+  <script src="home.js" defer></script>
 </head>
+
 <body>
-  <main class="container">
-    <section class="form-box">
-      <h1>Acceso denegado </h1>
-      <p>No puedes acceder a esta página sin iniciar sesión.</p>
-      <p>Serás redirigido al login en unos segundos...</p>
-      <a href="login.html" class="btn">Volver al Login</a>
-    </section>
-  </main>
+<header class="header">
+
+    <div id="userInfo" class="userinfo"></div>
+
+    <h1 class="titulo-centro">Mis Proyectos</h1>
+
+    <button id="logoutBtn" class="logout">Cerrar sesión</button>
+
+</header>
+
+
+
+    <main>
+
+      
+        <aside>
+            <h2>Agregar / Actualizar Proyecto</h2>
+
+            <div class="formProyecto__element">
+                <label>Título</label>
+                <input id="titulo" type="text">
+            </div>
+
+            <div class="formProyecto__element">
+                <label>Descripción</label>
+                <textarea id="descripcion"></textarea>
+            </div>
+
+            <div class="formProyecto__element">
+                <label>Tecnologías</label>
+                <input id="tecnologias" type="text" placeholder="JS, HTML, CSS">
+            </div>
+
+            <div class="formProyecto__element">
+                <label>Repositorio</label>
+                <input id="repositorio" type="text">
+            </div>
+
+            <div class="formProyecto__button">
+                <button id="btnGuardar">Guardar</button>
+                <button id="btnActualizar" style="display:none;">Actualizar</button>
+            </div>
+        </aside>
+
+       
+        <section>
+          <h2 class="titulo-proyectos">
+    <img src="https://i.pinimg.com/1200x/ea/5f/c3/ea5fc330d1aa6d827c2e1abc338152ea.jpg" alt="" class="titulo-img">
+    Proyectos Guardados
+</h2>
+
+
+            <div class="projects__container" id="contenedorProyectos">
+    
+            </div>
+        </section>
+
+    </main>
+
 </body>
 </html>
